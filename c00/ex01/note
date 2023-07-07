@@ -1,0 +1,24 @@
+Para resolver esse exercício, você pode seguir os seguintes passos:
+
+1. Definir as classes PhoneBook e Contact:
+   - Crie uma classe chamada `Contact` com as propriedades `firstName`, `lastName`, `nickname`, `phoneNumber` e `darkestSecret`.
+   - Crie uma classe chamada `PhoneBook` com uma propriedade de array chamada `contacts` para armazenar os contatos.
+
+2. Implementar a lógica de adicionar contatos:
+   - Na classe `PhoneBook`, adicione um método público chamado `addContact` que recebe os detalhes de um novo contato.
+   - Verifique se a quantidade de contatos no `PhoneBook` é menor que 8. Se for, crie um novo objeto `Contact` e adicione-o ao array de contatos.
+   - Se já houver 8 contatos no `PhoneBook`, substitua o contato mais antigo pelo novo contato.
+
+3. Implementar a lógica de pesquisa de contatos:
+   - Na classe `PhoneBook`, adicione um método público chamado `searchContact` que exibe os contatos armazenados.
+   - Use um loop para percorrer o array de contatos e exiba as informações formatadas (index, first name, last name e nickname) conforme a especificação do exercício.
+   - Solicite ao usuário que insira o índice do contato que deseja exibir.
+   - Verifique se o índice está dentro do intervalo válido e, se estiver, exiba as informações completas do contato.
+
+4. Implementar a lógica principal do programa:
+   - No programa principal, crie uma instância da classe `PhoneBook`.
+   - Em um loop, exiba as opções de comando (ADD, SEARCH, EXIT) para o usuário e solicite a entrada.
+   - Com base no comando fornecido, chame o método apropriado na classe `PhoneBook` para realizar a ação desejada.
+   - Repita o loop até que o usuário insira o comando EXIT.
+
+Certifique-se de lidar corretamente com as validações necessárias, como garantir que os campos não fiquem vazios e que os índices estejam dentro do intervalo válido. Nomeie o seu arquivo executável de acordo com um nome relevante, como "phonebook".
